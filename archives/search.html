@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<body>
+  <Head>
+      <title>Select a Continent</title>
+      <style>
+        /*PLEASE DO NOT REMOVE THIS*/
+      #search{
+        background: #2B7A78;
+      }
+      li a:hover:not(#search) {
+        background-color: #17252a;
+        color: black;
+      }
+      </style>
+      <link rel="stylesheet" href="../style.css">
+  </Head>
+<body>
+  <ul>
+    <li id="favicon"><a href="https://oakcanyon.alpineschools.org/"><img alt="Favicon" src="../photos/Favicon.png" width="40"></a></li>
+    <li id="index"><a href="../index.html">Home<br><img alt="Home" src="../photos/home.png" width="25"></a></li>
+    <li id="search"><a href="../search.html">Search<br><img alt="Search" src="../photos/mag.png" width="25"></a></li>
+    <li id="aboutus"><a href="../aboutUs.html">About Us<br><img alt="About us" src="../photos/us.png" width="25"></a></li>
+    <li id="generalinfo"><a href="../generalInfo.html">Info<br><img alt="General Info" src="../photos/book icon for tsa.png" width="25"></a></li>
+  </ul>
+  <div style="margin-left:calc(10% + 32px);padding:3.2px;height:1000px;">
+  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+input[type=text] {
+  width: 12%; 
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  margin-right: 2%;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+</style>
+<script>
+  function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("SearchBar");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+  </script>
+<input type="text" id="SearchBar" onkeyup="myFunction()" placeholder="Enter Continent..." title="Search">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<ul id="myUL">
+  <li><a href="Search/asia.html">Asia</a></li>
+  <li><a href="Search/africa.html">Africa</a></li>
+  <li><a href="Search/northamerica.html">North America</a></li>
+  <li><a href="Search/southamerica.html">South America</a></li>
+  <li><a href="Search/antarctica.html">Antarctica</a></li>
+  <li><a href="Search/europe.html">Europe</a></li>
+  <li><a href="Search/australia.html">Australia</a></li>
+</ul>
+
+</body> 
+</html>

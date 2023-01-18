@@ -1,0 +1,135 @@
+.box {
+  width: 95%;
+  height: 95%;
+  background-size: cover;
+  margin: auto;
+}
+
+.background-tint {
+  background-color: rgba(100, 100, 100, 0.5);
+  background-blend-mode: multiply;
+}
+
+.video-container {
+  padding-top: calc(28.125% + 40px);
+  position: relative;
+}
+
+iframe.vid {
+  width: calc(50% + 60px) !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-left: calc(25% - 32px);
+}
+iframe {
+  border-style: none;
+}
+body {
+  /*#00d099, #ffbb33, #f03355*/
+  text-align: center;
+  background-image: url("images/fb.png");
+  background-repeat: repeat;
+}
+div.pos {
+  margin-left: calc(2% + 55px);
+  margin-right: calc(2% + 68px);
+  padding: 3.2px;
+  height: 1000px;
+}
+iframe.doc {
+  width: calc(50% + 60px);
+  height: 100%;
+}
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #2b7a78;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: #17252a;
+  color: black;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 85%;
+  height: 50%;
+  text-align: center;
+  margin-left: 0;
+}
+
+#myUL li a {
+  background-color: #3aafa9;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #17252a;
+  color: white;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #fda4cd;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a d {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a c {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a c:hover {
+  background-color: #ca528a;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a c.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Change the color of links on hover */
+.topnav a d:hover {
+  background-color: #ca528a;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a c.active {
+  background-color: #04aa6d;
+  color: black;
+}
+.topnav a d.active {
+  background-color: #04aa6d;
+  color: black;
+}
